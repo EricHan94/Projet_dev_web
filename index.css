@@ -1,0 +1,182 @@
+header{
+    position:relative;
+    background-image: url(gaumont.jfif);
+    background-attachment: fixed;
+    height:250px;
+    width:100%;
+    color: whitesmoke;
+    line-height:250px;
+    text-align: center;
+    border:groove #faf9f8bb;
+    border-radius:10px;
+}
+
+body{
+    background-color: #f1ebebfd;
+    font-size: medium;
+}
+
+nav,main{
+    text-align: justify;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+.sous{
+    display:none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color:#ebc5c5fd;
+    position: absolute;
+    width: 100%;
+    z-index:1000;
+}
+
+
+nav > ul li:hover .sous{
+    display:block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align:left;
+    font-size: 12px;
+}
+
+.sous a{
+    padding:10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+     border-bottom: none;
+}
+
+.deroulant{
+    font-size:1.3em;
+    
+}
+
+.deroulant:hover{
+    color: #760001;
+}
+
+nav ul li{
+    float:left;
+    position: relative;
+}
+
+
+.image-acceuil{
+    display:inline-box;
+    float:left;
+    vertical-align:top;
+    margin-right:5px;
+    margin-left:30px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow:10px rgb(247, 244, 244);
+    border:groove white;
+    width:300px;
+    height:200px;
+}
+
+
+section{
+    float:left;
+    overflow-x: scroll;
+    width:100%;
+}
+table{
+    align-self:center;
+
+}
+
+.photofilm img{
+    height:200px;
+    Width:300px;
+}
+
+.scrolltable{
+    padding:0px;
+    border-spacing: 0px;
+}
+
+
+footer{
+    display: inline-block;
+    bottom: 10px;
+    width:100%;
+    padding-top:50px;
+    height:50px;
+}
+
+footer a{
+    color:black;
+    vertical-align: top;
+}
+
+footer p{
+    float:left;
+    margin-right: 10px;
+    
+}
+
+.img-contact{
+    height:30px;
+    width:30px;
+}
+
+
+.d1{
+    width: 640px;
+    height: 432px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px #777;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.conteneur{
+    max-width: 650px;
+    margin: 50px auto;
+}
+
+
+.d1:hover{
+    animation-play-state: paused;
+}
+@keyframes fondu{
+    0%{background-image: url("image/starWars.jfif");}
+    33.33%{background-image: url("pierreLapin.jfif");}
+    66.67%{background-image: url("albatros.jfif");}
+    100%{background-image: url("vtc.jfif");}
+}
+
+#blogvision2{
+float: right;
+}
+  
+  
