@@ -22,6 +22,8 @@ class Router
                 $connection = new ConnectionController();
                 if('Connecter' === $action){
                     return $connection->connecter();
+                }elseif('Inscrire' === $action){
+                    return $connection->inscrire();
                 }
             }
         } else {

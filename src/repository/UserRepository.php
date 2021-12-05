@@ -21,7 +21,11 @@ class UserRepository extends Database{
     }
 
     public function connecter(array $data = []){
-        var_dump("hello");
+        var_dump("connecter");
+    }
+
+    public function inscrire(array $data = []){
+        var_dump("inscrire");
     }
 }
 ?>

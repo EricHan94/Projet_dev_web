@@ -21,7 +21,7 @@
                         <li><a href="#">Thriler</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Inscription</a></li>
+                <li><a href="src/view/inscrire.php">Inscription</a></li>
                 <li><a href="src/view/seconnecter.php">Se connecter</a></li>
             </ul>
         </nav>

@@ -18,5 +18,11 @@ class ConnectionController{
             $this->userRepository->connecter($_POST);
         }
     }
+
+    public function inscrire(){
+        if ('POST' === $_SERVER['REQUEST_METHOD']) {
+            $this->userRepository->inscrire($_POST);
+        }
+    }
 }
 ?>
