@@ -2,31 +2,31 @@
 
 namespace App;
 
-use App\controller\PostController;
+use App\controller\ConnectionController;
+use App\controller\UserController;
 
 class Router
 {
     public function run()
     {
-        $route = $_GET['route'] ?? null;
+        $route = $_GET['controller'] ?? null;
         $action = $_GET['action'] ?? null;
 
-        if (isset($_GET['route'])) {
-            if ('post' === $route && $action) {
-                $postController = new PostController();
-
-                if ('create' === $action) {
-                    return $postController->create();
-                } elseif ('read' === $action && isset($_GET['id'])) {
-                    var_dump($_GET['id']);die;
-                    return $postController->read($_GET['id']);
+        if (isset($_GET['controller'])) {
+            if ('user' === $route && $action) {
+                $user = new UserController();
+                if ('lister' === $action) {
+                    return $user->lister();
+                } 
+            }else if('Connection' === $route && $action){
+                $connection = new ConnectionController();
+                if('Connecter' === $action){
+                    return $connection->connecter();
                 }
-            } elseif ('contact' === $route) {
-                var_dump('contact');
             }
         } else {
-            var_dump('hello');
-            require_once 'accueil.php';
+            require_once 'index.php';
         }
     }
 }
+?>

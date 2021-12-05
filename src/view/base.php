@@ -12,7 +12,7 @@
         </header>
 
         <nav>
-            <ul> 
+            <ul>
                 <li><a href="../../index.php">Accueil</a></li>
                 <li class="deroulant">Catégorie de film
                     <ul class="sous">
@@ -22,9 +22,10 @@
                     </ul>
                 </li>
                 <li><a href="#">Inscription</a></li>
-                <li><a href="src/view/seconnecter.php">Se connecter</a></li>
+                <li><a href="seconnecter.php">Se connecter</a></li>
             </ul>
         </nav>
+
         <br><br>
         <main>
             <p>
@@ -34,15 +35,10 @@
                 </p>
         </main>
 
-        <?php
- 
-        use App\Router;
+        <div class="container">
+            <?=  $content ?>
+        </div>
 
-        require 'vendor/autoload.php';
-
-        $routeur = new Router();
-        $routeur->run();
-        ?>
         <div class="d1"></div>
         <div class="conteneur">
             <div class="d2"></div>
@@ -50,4 +46,3 @@
     </body>
 </html>
         
- 
