@@ -5,11 +5,10 @@
 <title>Connexion</title>
     <meta charset="utf-8"> 
     <link rel="stylesheet" type="text/css" href="seConnecter.css">
-	<script  type="text/javascript" src="seConnecter.js" >
 </script>
 <body>
     <div class="loginbox">
-    <img src="avatar.png" class="avatar">
+    <img src="image/avatar.png" class="avatar">
         <h1>connexion</h1>
         <form action = "../../index.php?controller=Connection&action=Connecter" method="post" >
         

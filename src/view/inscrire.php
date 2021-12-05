@@ -9,7 +9,7 @@
 </script>
 <body>
     <div class="loginbox">
-    <img src="avatar.png" class="avatar">
+    <img src="image/avatar.png" class="avatar">
         <h1>Inscription</h1>
         <form action = "../../index.php?controller=Connection&action=Inscrire" method="post" >
         

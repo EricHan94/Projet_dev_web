@@ -13,7 +13,7 @@
 
         <nav>
             <ul> 
-                <li><a href="../../index.php">Accueil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li class="deroulant">Catégorie de film
                     <ul class="sous">
                         <li><a href="#">Action</a></li>
@@ -33,7 +33,9 @@
                 et plus encore. Laissez vous émerveiller et allez à la rencontre de nouveaux films.
                 </p>
         </main>
-
+        <ul>
+            <button> <a href="src/view/ajouterFilmForm.php" class="csw-btn-button"> un nouveau film </a></button>
+        </ul>
         <?php
  
         use App\Router;

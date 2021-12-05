@@ -4,6 +4,7 @@ namespace App;
 
 use App\controller\ConnectionController;
 use App\controller\UserController;
+use App\controller\FilmController;
 
 class Router
 {
@@ -24,6 +25,11 @@ class Router
                     return $connection->connecter();
                 }elseif('Inscrire' === $action){
                     return $connection->inscrire();
+                }
+            }else if('AjoutFilm' === $route && $action){
+                $ajoutFilm = new FilmController();
+                if('AjouterFilm' === $action){
+                    return $ajoutFilm->ajouter();
                 }
             }
         } else {
