@@ -3,6 +3,7 @@ namespace  App\repository;
 
 use App\Database;
 use App\model\UserModel;
+use App\view\View;
 
 class UserRepository extends Database{
     public function getId(){
@@ -34,6 +35,9 @@ class UserRepository extends Database{
                 'password'=> $data['password'],
             ]
     );
+    //$view = new View();
+    //return $view->render(src.view.WelcomePage,);
+    header('Location: src/view/WelcomePage.php');
     }
 }
 ?>
