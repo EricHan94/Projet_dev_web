@@ -8,7 +8,7 @@
     </head>
     <body>
         <header >
-            <h1>Pizzananas Cineé/h1>
+            <h1>Pizzananas Ciné/h1>
         </header>
 
         <nav>
