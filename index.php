@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AccroCine</title>
+        <title>PIZZANANAS</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
         <script language="javascript" type="text/javascript" src="validemail.js"></script>
     </head>
     <body>
         <header >
-            <h1>AccroCine</h1>
+            <h1>Pizzananas Ciné</h1>
         </header>
 
         <nav>
@@ -28,7 +28,7 @@
         <br><br>
         <main>
             <p>
-                AccroCiné, le site de référence du cinéma et des séries tv ! Découvrez notre recherche de films, 
+                PizzananasCiné, le site de référence du cinéma et des séries tv ! Découvrez notre recherche de films, 
                 le programme tv de vos séries préférées, l'actualité ciné et séries, les émissions AccroCiné, les dernières bandes-annonces, 
                 et plus encore. Laissez vous émerveiller et allez à la rencontre de nouveaux films.
                 </p>
