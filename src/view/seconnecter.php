@@ -13,13 +13,18 @@
         <form action = "../../index.php?controller=Connection&action=Connecter" method="post" >
         
             <div class="mb-3">
-                <label for="title" class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" id="Nom">
+                <label for="title" class="form-label">NOM</label>
+                <input type="text" name="nom" class="form-control" id="nom">
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label">PreNom</label>
+                <input type="text" name="prenom" class="form-control" id="prenom">
             </div>
 
             <div class="mb-3">
                 <label for="content" class="form-label">Mot de pass</label>
-                <input type="password" name="motdepass" class="form-control" id="mdp">            </div>
+                <input type="password" name="password" class="form-control" id="password">            </div>
 
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-3">Connexion</button>

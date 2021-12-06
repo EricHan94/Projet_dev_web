@@ -25,7 +25,15 @@ class UserRepository extends Database{
     }
 
     public function inscrire(array $data = []){
-        var_dump("inscrire");
+        //var_dump("inscrire");
+        $this->createQuery(
+            'INSERT INTO users (nom, prenom, password) VALUES(:nom, :prenom, :password)',
+            [
+                'nom' => $data['nom'],
+                'prenom' => $data['prenom'],
+                'password'=> $data['password'],
+            ]
+    );
     }
 }
 ?>
