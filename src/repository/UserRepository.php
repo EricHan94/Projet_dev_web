@@ -6,6 +6,14 @@ use App\model\UserModel;
 use App\view\View;
 
 class UserRepository extends Database{
+    private View $view;
+
+    public function __construct()
+    {
+        $this->view = new View();
+    }
+
+
     public function getId(){
         $connection = (new Database())->getConnection();
 
@@ -35,9 +43,10 @@ class UserRepository extends Database{
                 'password'=> $data['password'],
             ]
     );
-    //$view = new View();
-    //return $view->render(src.view.WelcomePage,);
-    header('Location: src/view/WelcomePage.php');
+    //$this->view->render('src.view.ajouterFilmForm', $data);
+    //return $this->view->render('src.view.ajouterFilmForm', $data);
+    //header('Location: src/view/WelcomePage.php');
+    require_once('src/view/WelcomePage.php');
     }
 }
 ?>

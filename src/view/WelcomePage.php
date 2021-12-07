@@ -11,10 +11,11 @@
             <h1>Pizzananas Ciné</h1>
         </header>
         <h2>
-            Welcome to notre site Pizzananas Cinémas : 
+            Welcome to notre site Pizzananas Cinémas :
+            <?php echo $data['nom']." ".$data['prenom']; ?>
         </h2>
         <ul>
-            <button> <a href="../../index.php" class="csw-btn-button">Revenez à l'accueil</a></button>
+            <button> <a href="index.php" class="csw-btn-button">Revenez à l'accueil</a></button>
         </ul>
     </body>
 </html>
