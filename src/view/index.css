@@ -1,6 +1,6 @@
 header{
     position:relative;
-    background-image: url(gaumont.jfif);
+    background-image: url(../../assets/images/gaumont.jfif);
     background-attachment: fixed;
     height:250px;
     width:100%;
@@ -169,10 +169,10 @@ footer p{
     animation-play-state: paused;
 }
 @keyframes fondu{
-    0%{background-image: url("starWars.jfif");}
-    33.33%{background-image: url("pierreLapin.jfif");}
-    66.67%{background-image: url("albatros.jfif");}
-    100%{background-image: url("vtc.jfif");}
+    0%{background-image: url("../../assets/images/starWars.jfif");}
+    33.33%{background-image: url("../../assets/images/pierreLapin.jfif");}
+    66.67%{background-image: url("../../assets/images/albatros.jfif");}
+    100%{background-image: url("../../assets/images/vtc.jfif");}
 }
 
 #blogvision2{

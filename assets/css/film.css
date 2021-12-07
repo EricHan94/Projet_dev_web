@@ -1,3 +1,68 @@
+
+.textsurphoto{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);	
+    margin-right:100px;
+    margin-bottom:100px;
+  }
+
+.section{
+	position:relative;
+}
+	
+
+.photoiAff{
+	float:left;
+}
+.page{
+  font-family: 'Source sans Pro',Calibri,Tahoma,sans-serif;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+  background-color:#E6E6FA;
+  padding:20px;
+  box-shadow: 2px 3px 4px black;
+  border-radius:10px;
+}
+
+
+.intro{
+	text-align:center;
+}
+h1,h3{
+	text-align:center;
+}
+.infostemps{
+	float: right;
+	margin-top:-255px;
+	margin-right:100px;
+	text-align:center;
+}
+
+footer{
+    display: inline-block;
+    bottom: 10px;
+    width:100%;
+    padding-top:50px;
+    height:50px;
+}
+footer p{
+    float:left;
+    margin-right: 10px;
+    
+}
+
+footer form{
+    float: left;
+}
+footer a{
+    color:black;
+    vertical-align: top;
+}
 header{
     position:relative;
     background-image: url(gaumont.jfif);
@@ -87,43 +152,12 @@ nav ul li{
     float:left;
     position: relative;
 }
-
-
-.image-acceuil{
-    display:inline-box;
-    float:left;
-    vertical-align:top;
-    margin-right:5px;
-    margin-left:30px;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    box-shadow:10px rgb(247, 244, 244);
-    border:groove white;
-    width:300px;
-    height:200px;
+.img-contact{
+    height:30px;
+    width:30px;
+	
+	
 }
-
-
-section{
-    float:left;
-    overflow-x: scroll;
-    width:100%;
-}
-table{
-    align-self:center;
-
-}
-
-.photofilm img{
-    height:200px;
-    Width:300px;
-}
-
-.scrolltable{
-    padding:0px;
-    border-spacing: 0px;
-}
-
 
 footer{
     display: inline-block;
@@ -133,50 +167,3 @@ footer{
     height:50px;
 }
 
-footer a{
-    color:black;
-    vertical-align: top;
-}
-
-footer p{
-    float:left;
-    margin-right: 10px;
-    
-}
-
-.img-contact{
-    height:30px;
-    width:30px;
-}
-
-
-.d1{
-    width: 640px;
-    height: 432px;
-    margin: 50px auto;
-    box-shadow: 0px 15px 10px -5px #777;
-    background-color: #EDEDED;
-    background-size: contain;
-    animation: fondu 15s ease-in-out infinite both;
-}
-.conteneur{
-    max-width: 650px;
-    margin: 50px auto;
-}
-
-
-.d1:hover{
-    animation-play-state: paused;
-}
-@keyframes fondu{
-    0%{background-image: url("starWars.jfif");}
-    33.33%{background-image: url("pierreLapin.jfif");}
-    66.67%{background-image: url("albatros.jfif");}
-    100%{background-image: url("vtc.jfif");}
-}
-
-#blogvision2{
-float: right;
-}
-  
-  

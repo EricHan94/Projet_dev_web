@@ -29,7 +29,9 @@
 
 
             <div class="col-auto">
+                
                 <button type="submit" class="btn btn-primary mb-3">Inscrire</button>
+              
             </div>
         </form>
         

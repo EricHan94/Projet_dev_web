@@ -1,7 +1,9 @@
+
+@namespace url(seConnecter.css);
 body{
     margin: 0;
     padding: 0;
-    background: url(../../assets/images/imageCine.jfif);
+    background: url(imageCine.jfif);
     background-size: cover;
     font-family: sans-serif;
 	
@@ -82,11 +84,6 @@ h1{
 }
 
 .loginbox a:hover
-{
-    color: #ffc107;
-}
-
-button:hover
 {
     color: #ffc107;
 }

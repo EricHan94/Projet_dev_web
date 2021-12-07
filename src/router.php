@@ -33,7 +33,7 @@ class Router
                 }
             }
         } else {
-            require_once 'index.php';
+            require_once 'src/view/home.php';
         }
     }
 }

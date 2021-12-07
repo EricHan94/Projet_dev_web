@@ -4,7 +4,7 @@
         <title>AccroCine</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="src/view/index.css">
-        <script language="javascript" type="text/javascript" src="assets/js/validemail.js"></script>
+        <script language="javascript" type="text/javascript" src="validemail.js"></script>
     </head>
     <body>
         <header >
@@ -21,10 +21,8 @@
                         <li><a href="#">Thriler</a></li>
                     </ul>
                 </li>
-                <!--
                 <li><a href="src/view/inscrire.php">Inscription</a></li>
                 <li><a href="src/view/seconnecter.php">Se connecter</a></li>
--->
             </ul>
         </nav>
 
@@ -36,10 +34,6 @@
                 et plus encore. Laissez vous émerveiller et allez à la rencontre de nouveaux films.
                 </p>
         </main>
-
-        <div class="container">
-            <?=  $content ?>
-        </div>
 
         <div class="d1"></div>
         <div class="conteneur">

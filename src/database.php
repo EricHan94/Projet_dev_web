@@ -1,24 +1,22 @@
 <?php 
 namespace App;
 
-	class Database{
+	abstract class Database{
 		const data_Host = 'mysql:host=localhost; dbname=projet-web-s1;charset=utf8';
 		const data_Name = 'root';
+		const DB_PASSWORD = '';
 		
 		private $connection;
-		public function getConnection(): \PDO //return un class pdo, : void: return rien;  : string return un string, ...
+		public function getConnection(): \PDO 
 		{
 		
 			try {
-				$this->connection = new \PDO(self::data_Host, self::data_Name); //self gọi lại class chính nó, 		self::data_Host truy cập lại chính nó và lấy ra giá trịn data_Host
-
+				$this->connection = new \PDO(self::data_Host, self::data_Name, self::DB_PASSWORD); 
 				$this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-				//return 'connection to the database ok';
 				return $this->connection; 
 			} catch (\Exception $e) {
 				die('connexion error :'.$e->getMessage());
 			}
-			//return null;
 		}
 
 		private function checkConnection(): \PDO
