@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PizzananasCine</title>
+        <title>PIZZANANAS</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
         <script language="javascript" type="text/javascript" src="validemail.js"></script>
@@ -51,5 +51,3 @@
         </div>
     </body>
 </html>
-        
- 
