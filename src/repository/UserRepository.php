@@ -28,11 +28,18 @@ class UserRepository extends Database{
             if(empty($result->fetch())){
                 return False;
             }else{
-                      return TRUE;
+                 return TRUE;
                      
            }
             
         
+    }
+
+    public function connecter(array $data=[]){
+        $data['nom'] = $_POST['nom'];
+        $data['prenom'] = $_POST['prenom'];
+
+
     }
 
     public function inscrire(array $data = []){

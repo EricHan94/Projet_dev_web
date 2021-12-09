@@ -25,8 +25,11 @@ class ConnectionController{
                 require_once('src/view/home.php');
                 
             }else{
+                $this->userRepository->connecter($_POST);
                 $this->view->render('/WelcomePage', [
-                    'texte' => 'Bon retour parmi nous'
+                    'texte' => 'Bon retour parmi nous',
+                    'nomPer' => $_POST['nom'],
+                    'prenomPer' => $_POST['prenom']
                 ]);
             }
             
@@ -38,20 +41,21 @@ class ConnectionController{
         if ('POST' === $_SERVER['REQUEST_METHOD']) {
             $check=$this->userRepository->checkUserExists($_POST);
         }
-        if($check === FALSE)
-            {
+        if($check === FALSE) {
                 $this->userRepository->inscrire($_POST);
                 $this->view->render('/WelcomePage', [
-                    'texte' => 'Vous êtes bien inscrit'
+                    'texte' => 'Vous êtes bien inscrit',
+                    'nomPer' => $_POST['nom'],
+                    'prenomPer' => $_POST['prenom']
                 ]);
-            }else{
+        }else{
                 echo "Vous avez déja un compte. Connectez vous";
                 require_once('src/view/home.php');
                 
-            }
-            
         }
-       
+            
     }
+       
+}
 
 ?>
