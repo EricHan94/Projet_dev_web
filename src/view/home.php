@@ -23,6 +23,7 @@
                 </li>
                 <li><a href="src/view/inscrire.php">Inscription</a></li>
                 <li><a href="src/view/seconnecter.php">Se connecter</a></li>
+                <li><a href="src/view/ajouterFilmForm.php">Ajouter nouveau film</a></li>
             </ul>
         </nav>
 
