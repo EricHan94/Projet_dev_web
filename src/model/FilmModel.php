@@ -3,7 +3,6 @@ namespace App\model;
 
 class FilmModel{
 
-    private int $id;
     private String $titre;
     private String $alias;
     private String $enAffiche;
@@ -18,9 +17,6 @@ class FilmModel{
     private String $dateSortie;
     private String $affiche;
 
-    public function getId(){
-            return $this->id;
-    }
     public function getTitre(){
         return $this->titre;
     }
@@ -79,10 +75,6 @@ class FilmModel{
         $this->realisateur = $realisateur;
         return $this;
     }
-    public function setEnAffiche($enAffiche){
-        $this->enAffiche = $enAffiche;
-        return $this;
-    }
     public function setActeurs($acteurs){
         $this->acteurs = $acteurs;
         return $this;
@@ -95,16 +87,8 @@ class FilmModel{
         $this->enVO = $enVO;
         return $this;
     }
-    public function setEnAffiche($enAffiche){
-        $this->enAffiche = $enAffiche;
-        return $this;
-    }
     public function setDureeMinutes($dureeMinutes){
         $this->dureeMinutes = $dureeMinutes;
-        return $this;
-    }
-    public function setEnAffiche($enAffiche){
-        $this->enAffiche = $enAffiche;
         return $this;
     }
     public function setGenres_id($genres_id){

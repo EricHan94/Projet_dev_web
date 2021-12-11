@@ -8,7 +8,6 @@ class FilmRespository extends Database{
     private function buildObject(array $row): FilmModel {
 
         $film = new FilmModel;
-        $film->setId($row['id']);
         $film->setTitre($row['titre']);
         $film->setAlias($row['alias']);
         $film->setEnAffiche($row['enAffiche']);
@@ -26,12 +25,11 @@ class FilmRespository extends Database{
 
     public function checkFilmExists(array $data = []){
         $result = $this->createQuery(
-            'SELECT id FROM film WHERE Id = :postId and Titre = :postTitre and Alias = :postAlias and 
+            'SELECT id FROM film WHERE Titre = :postTitre and Alias = :postAlias and 
             TitreOriginal = :postTitreOriginal and Realisateur = :postRealisateur and Acteurs = :postActeurs and 
             Synopsis = :postSynopsis and EnVO = :postEnVO and DureeMinutes = :postDureeMinutes and Genres_id = :postGenres_id and 
-            AgeMiniPublic = :postAgeMiniPublic and DateSortie = :postDateSortie and Affiche = :postAffiche'
+            AgeMiniPublic = :postAgeMiniPublic and DateSortie = :postDateSortie and Affiche = :postAffiche',
             [
-                'postId' => $data['id'],
                 'postTitre' => $data['titre'],
                 'postAlias' => $data['alias'],
                 'postTitreOriginal' => $data['titreOriginal'],
@@ -53,13 +51,13 @@ class FilmRespository extends Database{
                   return TRUE;
                  
        }
+    }
 
     public function ajouter(array $data = []){
         $this->createQuery(
-            'INSERT INTO film (id, titre, alias, titreOriginal, realisateur, acteurs, synopsis, enVO, dureeMinutes, genres_id, ageMiniPublic, dateSortie, affiche) 
-            VALUES(:id, :titre, :alias, :titreOriginal, :realisateur, :acteurs, :synopsis, :enVO, :dureeMinutes, :genres_id, :ageMiniPublic, :dateSortie, :affiche)',
+            'INSERT INTO film (titre, alias, titreOriginal, realisateur, acteurs, synopsis, enVO, dureeMinutes, genres_id, ageMiniPublic, dateSortie, affiche) 
+            VALUES(:titre, :alias, :titreOriginal, :realisateur, :acteurs, :synopsis, :enVO, :dureeMinutes, :genres_id, :ageMiniPublic, :dateSortie, :affiche)',
             [
-                'id' => $data['id'],
                 'titre' => $data['titre'],
                 'alias' => $data['alias'],
                 'titreOriginal' => $data['titreOriginal'],

@@ -13,11 +13,6 @@
         <form action = "../../index.php?controller=AjoutFilm&action=AjouterFilm" method="post" >
 
         <div class="mb-3">
-                <label for="title" class="form-label">ID</label>
-                <input type="int" name="id" class="form-control" id="id">
-            </div>
-
-        <div class="mb-3">
                 <label for="title" class="form-label">Titre</label>
                 <input type="varchar" name="titre" class="form-control" id="titre">
             </div>
