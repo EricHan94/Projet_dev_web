@@ -15,10 +15,12 @@
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <li class="deroulant">Catégorie de film
-                    <ul class="sous">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Comédie</a></li>
-                        <li><a href="#">Thriler</a></li>
+                <ul class="sous">
+                    <li><a href="index.php?controller=CategorieFilm&action=1">Comédie</a></li>
+                        <li><a href="index.php?controller=CategorieFilm&action=2">Fantastique</a></li>
+                        <li><a href="index.php?controller=CategorieFilm&action=3">Thriler</a></li>
+                        <li><a href="index.php?controller=CategorieFilm&action=4">Drame</a></li>
+                        <li><a href="index.php?controller=CategorieFilm&action=7">Comédie dramatique</a></li>
                     </ul>
                 </li>
                 <li><a href="src/view/ajouterFilmForm.php">Ajouter Nouveau Film</a></li>
@@ -42,10 +44,6 @@
             <?=  $content ?>
         </div>
 
-        <div class="d1"></div>
-        <div class="conteneur">
-            <div class="d2"></div>
-        </div>
     </body>
 </html>
         

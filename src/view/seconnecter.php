@@ -18,12 +18,12 @@
             </div>
 
             <div class="mb-3">
-                <label for="title" class="form-label">PreNom</label>
+                <label for="title" class="form-label">Prenom</label>
                 <input type="text" name="prenom" class="form-control" id="prenom">
             </div>
 
             <div class="mb-3">
-                <label for="content" class="form-label">Mot de pass</label>
+                <label for="content" class="form-label">Mot de passe</label>
                 <input type="password" name="password" class="form-control" id="password">            </div>
 
             <div class="col-auto">

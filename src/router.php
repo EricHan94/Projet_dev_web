@@ -31,6 +31,9 @@ class Router
                 if('AjouterFilm' === $action){
                     return $ajoutFilm->ajouter();
                 }
+            }else if('CategorieFilm' === $route && $action){
+                $filmController = new FilmController();
+                return $filmController->filmsCategorie($action);
             }
         } else {
             require_once 'src/view/home.php';
