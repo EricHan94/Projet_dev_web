@@ -32,8 +32,11 @@ class FilmModel{
     public function getRealisateur(){
         return $this->realisateur;
     }
-    public function getacteurs(){
+    public function getActeurs(){
         return $this->acteurs;
+    }
+    public function getSynopsis(){
+        return $this->synopsis;
     }
     public function getEnVO(){
         return $this->enVO;
@@ -50,7 +53,7 @@ class FilmModel{
     public function getDateSortie(){
         return $this->dateSortie;
     }
-    public function getaffiche(){
+    public function getAffiche(){
         return $this->affiche;
     }
 
