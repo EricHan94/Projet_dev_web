@@ -25,7 +25,7 @@ class FilmRespository extends Database{
 
     public function checkFilmExists(array $data = []){
         $result = $this->createQuery(
-            'SELECT id FROM film WHERE Titre = :postTitre and Alias = :postAlias and 
+            'SELECT id FROM films WHERE Titre = :postTitre and Alias = :postAlias and 
             TitreOriginal = :postTitreOriginal and Realisateur = :postRealisateur and Acteurs = :postActeurs and 
             Synopsis = :postSynopsis and EnVO = :postEnVO and DureeMinutes = :postDureeMinutes and Genres_id = :postGenres_id and 
             AgeMiniPublic = :postAgeMiniPublic and DateSortie = :postDateSortie and Affiche = :postAffiche',
@@ -55,7 +55,7 @@ class FilmRespository extends Database{
 
     public function ajouter(array $data = []){
         $this->createQuery(
-            'INSERT INTO film (titre, alias, titreOriginal, realisateur, acteurs, synopsis, enVO, dureeMinutes, genres_id, ageMiniPublic, dateSortie, affiche) 
+            'INSERT INTO films (titre, alias, titreOriginal, realisateur, acteurs, synopsis, enVO, dureeMinutes, genres_id, ageMiniPublic, dateSortie, affiche) 
             VALUES(:titre, :alias, :titreOriginal, :realisateur, :acteurs, :synopsis, :enVO, :dureeMinutes, :genres_id, :ageMiniPublic, :dateSortie, :affiche)',
             [
                 'titre' => $data['titre'],
