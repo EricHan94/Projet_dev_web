@@ -11,17 +11,9 @@ class FilmRespository extends Database{
 
         $film = new FilmModel();
         $film->setTitre($row['titre']);
-        //$film->setAlias($row['alias']);
-        //$film->setEnAffiche($row['enAffiche']);
-        //$film->setTitreOriginal($row['titreOriginal']);
         $film->setRealisateur($row['realisateur']);
-        //$film->setActeurs($row['acteurs']);
         $film->setSynopsis($row['synopsis']);
-        //$film->setDureeMinutes($row['dureeMinutes']);
-        //$film->setGenres_id($row['genres_id']);
-        //$film->setAgeMiniPublic($row['ageMiniPublic']);
-        //$film->setDateSortie($row['dateSortie']);
-        //$film->setAffiche($row['affiche']);
+        
         return $film;
     }
 
