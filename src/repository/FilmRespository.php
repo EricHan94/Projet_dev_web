@@ -5,25 +5,28 @@ use App\Database;
 use App\model\FilmModel;
 
 class FilmRespository extends Database{
-    private function buildObject(array $row): FilmModel {
 
-        $film = new FilmModel;
+    private function buildObject(array $row): FilmModel 
+    {
+
+        $film = new FilmModel();
         $film->setTitre($row['titre']);
-        $film->setAlias($row['alias']);
-        $film->setEnAffiche($row['enAffiche']);
-        $film->setTitreOriginal($row['titreOriginal']);
+        //$film->setAlias($row['alias']);
+        //$film->setEnAffiche($row['enAffiche']);
+        //$film->setTitreOriginal($row['titreOriginal']);
         $film->setRealisateur($row['realisateur']);
-        $film->setActeurs($row['acteurs']);
+        //$film->setActeurs($row['acteurs']);
         $film->setSynopsis($row['synopsis']);
-        $film->setDureeMinutes($row['dureeMinutes']);
-        $film->setGenres_id($row['genres_id']);
-        $film->setAgeMiniPublic($row['ageMiniPublic']);
-        $film->setDateSortie($row['dateSortie']);
-        $film->setAffiche($row['affiche']);
+        //$film->setDureeMinutes($row['dureeMinutes']);
+        //$film->setGenres_id($row['genres_id']);
+        //$film->setAgeMiniPublic($row['ageMiniPublic']);
+        //$film->setDateSortie($row['dateSortie']);
+        //$film->setAffiche($row['affiche']);
         return $film;
     }
 
-    public function checkFilmExists(array $data = []){
+    public function checkFilmExists(array $data = [])
+    {
         $result = $this->createQuery(
             'SELECT id FROM films WHERE Titre = :postTitre and Alias = :postAlias and 
             TitreOriginal = :postTitreOriginal and Realisateur = :postRealisateur and Acteurs = :postActeurs and 
@@ -53,7 +56,8 @@ class FilmRespository extends Database{
        }
     }
 
-    public function ajouter(array $data = []){
+    public function ajouter(array $data = [])
+    {
         $this->createQuery(
             'INSERT INTO films (titre, alias, titreOriginal, realisateur, acteurs, synopsis, enVO, dureeMinutes, genres_id, ageMiniPublic, dateSortie, affiche) 
             VALUES(:titre, :alias, :titreOriginal, :realisateur, :acteurs, :synopsis, :enVO, :dureeMinutes, :genres_id, :ageMiniPublic, :dateSortie, :affiche)',
@@ -72,5 +76,22 @@ class FilmRespository extends Database{
                 'affiche'=> $data['affiche'],
             ]
     );
+    }
+
+    public function getFilmParGenre(int $genre)
+    {
+        $tableau = [];
+        $result = $this->createQuery(
+            'SELECT titre, synopsis, realisateur FROM films WHERE genres_id = :genre',
+            ['genre' => $genre]
+        );
+        $tab = $result->fetchAll();
+        
+        foreach($tab as $row){
+          
+            $objet = $this->buildObject($row);
+            array_unshift($tableau, $objet);
+        }
+        return $tableau;
     }
 }

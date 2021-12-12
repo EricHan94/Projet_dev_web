@@ -1,5 +1,5 @@
 <h2>
-            Bienvenue dans notre site Pizzananas Cinémas : <?= $nomPer." ".$prenomPer ?>
+            On vous remercie pour votre inscription ! Bienvenue dans notre site AccroCiné :<?= $nomPer." ".$prenomPer ?>
             <br>
             <?= $texte ?>
         </h2>
