@@ -53,7 +53,7 @@ class FilmModel{
     public function getDateSortie(){
         return $this->dateSortie;
     }
-    public function getaffiche(){
+    public function getAffiche(){
         return $this->affiche;
     }
 

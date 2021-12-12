@@ -18,6 +18,7 @@ class FilmController{
     public function ajouter(){
         if ('POST' === $_SERVER['REQUEST_METHOD']) {
             $this->filmRepository->ajouter($_POST);
+            echo "Vous avez ajouté un nouveau film !";
         }
     }
 
